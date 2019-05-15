@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <script src="../../dist/chuchote.umd.js"></script>
+  </head>
+  <body>
+    <script>
+      const debug = chuchote.createLogger({
+        filterLevel: chuchote.logLevel.INFO
+      });
+
+      debug.error("You made a mistake");
+    </script>
+  </body>
+</html>

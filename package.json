@@ -1,0 +1,52 @@
+{
+  "name": "chuchote",
+  "version": "1.0.0",
+  "description": "Configurable JavaScript logger.",
+  "keywords": [
+    "logger"
+  ],
+  "main": "dist/chuchote.cjs.js",
+  "module": "dist/chuchote.esm.js",
+  "browser": "dist/chuchote.umd.js",
+  "types": "dist/chuchote.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "devDependencies": {
+    "@types/jest": "^24.0.13",
+    "husky": "^2.3.0",
+    "jest": "^24.8.0",
+    "prettier": "1.17.1",
+    "rimraf": "^2.6.3",
+    "rollup": "^1.12.0",
+    "rollup-plugin-typescript2": "^0.21.0",
+    "ts-jest": "^24.0.2",
+    "typescript": "3.4.5"
+  },
+  "dependencies": {
+    "@types/node": "^12.0.1"
+  },
+  "scripts": {
+    "lint": "prettier ./src/* --write",
+    "test": "jest --verbose",
+    "build": "rollup -c",
+    "watch": "rollup -cw",
+    "prepare": "rimraf dist; npm run build"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm test"
+    }
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "testRegex": "^.+\\.spec\\.ts$"
+  }
+}

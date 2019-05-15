@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "declarationDir": "./dist",
+    "module": "es6",
+    "outDir": "./dist",
+    "target": "es5",
+    "noImplicitAny": true,
+    "noImplicitThis": false,
+    "removeComments": true,
+    "esModuleInterop": true
+  },
+  "files": ["src/chuchote.ts"],
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "src/**/*.spec.*"]
+}
