@@ -7,6 +7,11 @@
 
 Configurable JavaScript logger.
 
+[![NPM Version](https://img.shields.io/npm/v/chuchote.svg?style=flat)](https://www.npmjs.com/package/chuchote)
+[![NPM Downloads](https://img.shields.io/npm/dm/chuchote.svg?style=flat)](https://www.npmjs.com/package/chuchote)
+[![Build Status](https://travis-ci.org/oziks/chuchote.svg?branch=master)](https://travis-ci.org/oziks/chuchote)
+[![codecov](https://codecov.io/gh/oziks/chuchote/branch/master/graph/badge.svg)](https://codecov.io/gh/oziks/chuchote)
+
 ## Installation
 
 ```bash
